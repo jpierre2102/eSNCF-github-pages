@@ -44,8 +44,8 @@
         <button type="submit" class="btn btn-default">Entrer</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        
-       <li><a href="contact.html">Contact</a></li>
+      
+       <li><a href="conatct.html">Contact</a></li>
           
           
            
@@ -59,6 +59,43 @@
 </nav>
 
 
+ <div class="spacer"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.8108970,2.3044170);
+
+  var myOptions = {
+      zoom: 14,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: []
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+  });
+</script>
+    </div> 
+    <div class="col-sm-6">
+      <h1>Contact : Quentin Thomas </h1>
+      <p> DPX Netteté/Dépannage sites extérieurs</p>
+      <p>unite oprationnelle MRGE</p>
+      <p> 103 av.Marx Dormoy - 92200 Bagneux</p>
+      <p> Mobile : +33 (0)6 18 39 91 00</p>
+      <p> email: thomas.quentin@sncf.fr</p>
+    </div>
+  </div>
+</div>
 
 
 
@@ -72,20 +109,7 @@
 
 
 
-
-
-    <div id="container">
-      <div id="wrapper">
-      <h1>CSE.SNCF</h1>
-
-      <button type="button" class="btn btn-primary">Commander</button>
-
-       <h2> <span class="label label-primary"> Chartes </span>   <span class="label label"> </span>   <span class="label label-primary"> Montrouge </span>      </h2>
-
-        </div>
-      </div>
-
-      <div class="spacer"></div>
+    
  
 
 
@@ -109,42 +133,7 @@
 
 
 
-      <div id="site">
-        
-        <div id="teaser">
-          
-          <div class="categorie text-center">
-
-            <div class=" col-sm-6 col-md-3 feature">
-
-            <img src="Images/Outils.png" alt=" Logo outils" width="40" class="square">
-            <p>
-              Choississez les différentes pièces dans le catalogue selon le site choisis
-            <p>
-            </div>
-            <div class="col-sm-6 col-md-3 feature">
-
-            <img src="Images/Outils.png" alt=" Logo outils" width="40" class="square">
-            <p>
-              Choississez les différentes pièces dans le catalogue selon le site choisis
-            <p>
-              </div>
-
-              <div class=" col-sm-6 col-md-3 feature">
-
-            <img src="Images/Outils.png" alt=" Logo outils" width="40" class="square">
-            <p>
-              Choississez les différentes pièces dans le catalogue selon le site choisis
-            <p>
-              </div>
-
-               <div class=" col-sm-6 col-md-3 feature">
-
-            <img src="Images/Outils.png" alt=" Logo outils" width="40" class="square">
-            <p>
-              Choississez les différentes pièces dans le catalogue selon le site choisis
-            <p>
-
+    
 
 
 
@@ -160,35 +149,6 @@
 
 
              
-
-              <div class="spacer"></div>
-
-                </div>
-              </div>
-            </div>
-            <div class="spacer"></div>
-
-            <h2> </h2>
-            <div class="spacer"></div>
-
-
-            <div class="vertical-spacer"></div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-xs-12 text-center">
-                      <h2>Pour être au courant des dernière mise à jour sur les différents sites </h2>
-                      <!-- Begin MailChimp Signup Form -->
-                      <!-- Begin MailChimp Signup Form -->
-
-<div id="mc_embed_signup">
-<form action="https://csesncf.us18.list-manage.com/subscribe/post?u=992b7fac74386a95491eace6a&amp;id=365125c32f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  
-  <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
-  <input type="submit" value="Suivez-nous" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
-    
-</form>
-</div>
 
 <!--End mc_embed_signup-->
 
