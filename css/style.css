@@ -13,7 +13,7 @@ body {
 
 #wrapper {
 	background-image: url("../images/fond.jpg");
-	height: 700px; 
+	height: 800px; 
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
@@ -24,7 +24,7 @@ body {
 
 #wrapper h1 {
 
-	font-size : 82px ;
+	font-size : 70px ;
 	margin-bottom: 0.5em;
 }
 
@@ -36,6 +36,22 @@ body {
 
 .spacer {
 	height: 6em;
+}
+
+.spacer1 {
+	height: 3em;
+}
+
+.spacer2 {
+	height: 1em;
+}
+
+.spacer3 {
+	height: 23.8em;
+}
+
+.spacer4 {
+	height: 0.5em;
 }
 
 .feature p {
@@ -77,3 +93,8 @@ body {
 .navbar-transparent .navbar-brand:focus {
   color: white;
 }
+
+.logo {
+	border-radius: 60%
+}
+

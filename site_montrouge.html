@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>CSE.SNCF</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>--- CSE.SNCF ---</title>
+    
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,21 +21,45 @@
     <![endif]-->
   </head>
   <body>
+
+
+
    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">
-        <img src="Images/logo2.png" class="logo" width="90"></a>
+     
+      
+      <a class="navbar-brand" href="index.html"><img src="Images/logo2.png" class="logo" width="90"></a>
     </div>
 
-    <ul class="nav navbar-nav ">
+
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+<ul class="nav navbar-nav ">
 
 <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,10 +85,9 @@
 
 
       <ul class="nav navbar-nav navbar-right">
-      
-      <li><a href="connexion.html">Connexion</a></li>
-       <li><a href="contact.html">Contact</a></li>
-          
+        
+       <li><a href="connexion.html">Connexion</a></li>
+       <li><a href="contact.html">Contact</a></li>   
           
            
             
@@ -77,110 +100,24 @@
 </nav>
 
 
- <div class="spacer"></div>
+   <div class="spacer"></div>
+   <div class="container text-center">
+<h1>Site de Montrouge </h1>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <div id="map" style="width: 100%; height: 400px;"></div>
-
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-<script type="text/javascript">
-  var myLatlng = new google.maps.LatLng(48.8108970,2.3044170);
-
-  var myOptions = {
-      zoom: 14,
-      center: myLatlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: []
-  };
-
-  var map = new google.maps.Map(document.getElementById('map'), myOptions);
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: "You are here!"
-  });
-</script>
-    </div> 
-    <div class="col-sm-6">
-      <h1>Contact : Quentin Thomas </h1>
-      <p> DPX Netteté/Dépannage sites extérieurs</p>
-      <p>unite oprationnelle MRGE</p>
-      <p> 103 av.Marx Dormoy - 92200 Bagneux</p>
-      <p> Mobile : +33 (0)6 18 39 91 00</p>
-      <p> email: thomas.quentin@sncf.fr</p>
-    </div>
-  </div>
 </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-    
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             
-
-<!--End mc_embed_signup-->
-
-<!--End mc_embed_signup-->
-                    
-                  </div>
-                </div>
-              </div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer2"></div>
-            <div class="spacer2"></div>
-    <div class="spacer2"></div>
-
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
 
 
             
@@ -188,8 +125,6 @@
 
                    <img src="Images/logo_sncf.png" width="400">
 
-
-                  </div>
 
                   </div>
 
