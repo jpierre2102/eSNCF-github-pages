@@ -1,6 +1,8 @@
 body {
 	background-image: url("");
-	font-family: "Open Sans";
+	font-family: "Avenir", Arial, sans-serif;
+	color:#0088CE;
+
 
 }
 
@@ -21,6 +23,8 @@ body {
 	color:white;
 	text-shadow: 2px 2px 5px rgba(0,0,0.5);
 }
+
+
 
 #wrapper h1 {
 
@@ -114,7 +118,7 @@ body {
   .pied {display: table-footer-group;font-weight:bold;background-color:#eee;}
   .tete {background-color:#4a98af;color:#ffffff;display: table-header-group;font-weight:bold;text-align:center;}
   .legende {display: table-caption;caption-side: top;background-color:#eee; font-size: 1.5em}
-
+ 
 
 
 
