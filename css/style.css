@@ -6,6 +6,8 @@ body {
 
 }
 
+
+
 #footer {
 	background-color:black;
 	color: #aaaaaa;
@@ -120,7 +122,9 @@ body {
   .legende {display: table-caption;caption-side: top;background-color:#eee; font-size: 1.5em}
  
 
-
+.align {
+	text-align:center;
+}
 
 
 
