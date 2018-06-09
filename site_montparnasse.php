@@ -24,85 +24,12 @@
 
 
 
-   <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-     
-      
-      <a class="navbar-brand" href="index.html"><img src="Images/logo2.png" class="logo" width="90"></a>
-    </div>
-
-
-
-
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      
-<ul class="nav navbar-nav ">
-
-<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sites Extérieurs
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="site_dreux.html">Site de Dreux</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_chartres.html">Site de Chartres</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_rambouillet.html">Site de Rambouillet</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_vouille.html">Site de Vouille</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montparnasse.html">Site de Montparnasse</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montrouge.html">Site de Montrouge</a>
-          <div class="spacer4"></div>
-        </div>
-      </li>
-
-</ul>
-
-
-      <ul class="nav navbar-nav navbar-right">
-        
-       <li><a href="connexion.html">Connexion</a></li>
-       <li><a href="contact.html">Contact</a></li>   
-          
-           
-            
-
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+   <?php
+include('php/vues/navbar.php');?>
 
     <div class="spacer"></div>
    <div class="container text-center">
-<h1>Site de Vouille </h1>
+<h1>Site de Montparnasse </h1>
 <div class="spacer"></div>
 
 <section class="tableau">
@@ -110,7 +37,7 @@
     <div class="col"></div>
     <div class="col"></div>
   </div>
-  <div class="legende">Produit stockés sur le site de Vouille</div>
+  <div class="legende">Produit stockés sur le site de Montparnasse</div>
 
 
   <header class="tete">
@@ -150,33 +77,9 @@
 
     </div>
 
-    <div class="ligne">
-      <div class="cellule">NETTOYANT VERNIS COLLE 20L</div>
-      <div class="cellule"><img src="Images/photo_produit/nettoyant_vernis.JPG"></div>
-      <div class="cellule">DIESTONE DLS</div>
-      <div class="cellule">72100215</div>
-      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
-      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
-
-    </div>
-    <div class="ligne">
-      <div class="cellule">NETTOYAGE MOQUETTE - 20L</div>
-      <div class="cellule"><img src="Images/photo_produit/nettoyage_moquette.JPG"></div>
-      <div class="cellule">NETAL MO-2</div>
-      <div class="cellule">72104544</div>
-      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
-      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
-
-    </div>
-    <div class="ligne">
-      <div class="cellule">NETTOYAGE Demoustiquant pare-brise -20L</div>
-      <div class="cellule"><img src="Images/photo_produit/nettoyage_demoustiquant.JPG"></div>
-      <div class="cellule">NETAL ET-33-E</div>
-      <div class="cellule">02100202</div>
-      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
-      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
-
-    </div>
+   
+    
+   
     <div class="ligne">
       <div class="cellule">MULTIUSAGE 20L </div>
       <div class="cellule"><img src="Images/photo_produit/multiusage.JPG"></div>
@@ -186,15 +89,7 @@
       <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
     </div>
-    <div class="ligne">
-      <div class="cellule">NETT INOX & FILTRES 20L</div>
-      <div class="cellule"><img src="Images/photo_produit/diluant_gomme.JPG"></div>
-      <div class="cellule">BONDERITE C-MC 9206 (anciennement : PE 9206)</div>
-      <div class="cellule">02108065</div>
-      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
-      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
-
-    </div>
+   
      <div class="ligne">
       <div class="cellule">DILUANT Pour GOMME A MACHER   CARTON DE 4 X 5 LITRES</div>
       <div class="cellule"><img src="Images/photo_produit/anti_gun.JPG"></div>
@@ -213,24 +108,7 @@
       <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
     </div>
-    <div class="ligne">
-      <div class="cellule">NETTOYANT 6010 _ NETTOYAGE EXTERIEUR DES VEHICULES, TRAINS EN OPERATION MANUELLE  BIDON 20l </div>
-      <div class="cellule"><img src="Images/photo_produit/nettoyant_6010.JPG"></div>
-      <div class="cellule">NETTOYANT 6010</div>
-      <div class="cellule">02106881</div>
-      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
-      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
-
-    </div>
-    <div class="ligne">
-      <div class="cellule">NETTOYANT 6010 _ NETTOYAGE EXTERIEUR DES VEHICULES, TRAINS EN OPERATION MANUELLE  CONTAINER 1000 L</div>
-      <div class="cellule"><img src="Images/photo_produit/nettoyant_6010.JPG"></div>
-      <div class="cellule">NETTOYANT 6010</div>
-      <div class="cellule">02106882</div>
-      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
-      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
-
-    </div>
+    
     <div class="ligne">
       <div class="cellule">NETT LAVABO RES WC (8 X 750ML)</div>
       <div class="cellule"><img src="Images/photo_produit/nett_lavabo.JPG"></div>
@@ -258,11 +136,22 @@
       <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
     </div>
+
+    <div class="ligne">
+      <div class="cellule">------------------------------------------> Autres <---------------------------------------------</div>
+      <div class="cellule"> Photo à mettre</div>
+      <div class="cellule">à compléter</div>
+      <div class="cellule">à compléter</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
     
+
 </section>
 
 
-     
+    
 
 
 <section class="tableau">
@@ -270,7 +159,7 @@
     <div class="col"></div>
     <div class="col"></div>
   </div>
-  <div class="legende"> Consommables sur le site de Vouille   </div>
+  <div class="legende"> Consommables sur le site de Montparnasse  </div>
   <header class="tete">
     <div class="cellule">Nom Produit </div>
     <div class="cellule">Emplacement</div>
@@ -404,6 +293,18 @@
 
 
     </div>
+    <div class="ligne">
+      <div class="cellule"> Commentaire sur la commande : <FORM>
+      <TEXTAREA name="nom" rows=3 cols=100></TEXTAREA>
+      </FORM>
+
+      </div>
+     
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+
+
+    </div>
 
    
   </div>
@@ -426,12 +327,7 @@
 
 <div class="spacer"></div>
 <div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
+
 
 
             

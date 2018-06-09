@@ -24,94 +24,32 @@
 
 
 
-   <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-     
-      
-      <a class="navbar-brand" href="index.html"><img src="Images/logo2.png" class="logo" width="90"></a>
-    </div>
+   <?php
+include('php/vues/navbar.php');?>
 
 
-
-
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      
-<ul class="nav navbar-nav ">
-
-<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sites Extérieurs
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="site_dreux.html">Site de Dreux</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_chartres.html">Site de Chartres</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_rambouillet.html">Site de Rambouillet</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_vouille.html">Site de Vouille</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montparnasse.html">Site de Montparnasse</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montrouge.html">Site de Montrouge</a>
-          <div class="spacer4"></div>
-        </div>
-      </li>
-
-</ul>
-
-
-      <ul class="nav navbar-nav navbar-right">
-        
-       <li><a href="connexion.html">Connexion</a></li>
-       <li><a href="contact.html">Contact</a></li>   
-          
-           
-            
-
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-
-    <div class="spacer"></div>
+   <div class="spacer"></div>
    <div class="container text-center">
-<h1>Site de Chartres </h1>
-<div class="spacer"></div>
+<h1>Site de Montrouge </h1>
+
+ <div class="spacer"></div>
+
+
+
+
+
+
+
+
+
+
 
 <section class="tableau">
   <div class="colgroupe">
     <div class="col"></div>
     <div class="col"></div>
   </div>
-  <div class="legende">Produit stockés sur le site de Chartres</div>
+  <div class="legende">Produit stockés sur le site de Montrouge</div>
 
 
   <header class="tete">
@@ -130,7 +68,15 @@
 
 
   <div class="corp">
-    
+    <div class="ligne">
+      <div class="cellule">PRODUIT SOLS, FOSSES, MOTEURS -200L</div>
+      <div class="cellule"><img src="Images/photo_produit/ardrox.JPG"></div>
+      <div class="cellule">ARDROX 6468</div>
+      <div class="cellule">72104305</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
     <div class="ligne">
       <div class="cellule">BACTERICIDE POUR WC - 20L</div>
       <div class="cellule"><img src="Images/photo_produit/bactericide.JPG"></div>
@@ -214,7 +160,24 @@
       <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
     </div>
-    
+    <div class="ligne">
+      <div class="cellule">NETTOYANT 6010 _ NETTOYAGE EXTERIEUR DES VEHICULES, TRAINS EN OPERATION MANUELLE  BIDON 20l </div>
+      <div class="cellule"><img src="Images/photo_produit/nettoyant_6010.JPG"></div>
+      <div class="cellule">NETTOYANT 6010</div>
+      <div class="cellule">02106881</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">NETTOYANT 6010 _ NETTOYAGE EXTERIEUR DES VEHICULES, TRAINS EN OPERATION MANUELLE  CONTAINER 1000 L</div>
+      <div class="cellule"><img src="Images/photo_produit/nettoyant_6010.JPG"></div>
+      <div class="cellule">NETTOYANT 6010</div>
+      <div class="cellule">02106882</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
     <div class="ligne">
       <div class="cellule">NETT LAVABO RES WC (8 X 750ML)</div>
       <div class="cellule"><img src="Images/photo_produit/nett_lavabo.JPG"></div>
@@ -261,7 +224,7 @@
     <div class="col"></div>
     <div class="col"></div>
   </div>
-  <div class="legende">Listes Pièces sur le site de Chartres  </div>
+  <div class="legende">Listes Pièces sur le site de Montrouge  </div>
   <header class="tete">
     <div class="cellule">Nom Produit </div>
     <div class="cellule">Emplacement</div>
@@ -271,12 +234,105 @@
   </header>
   
   <div class="corp">
-    
-    
-     
+    <div class="ligne">
+      <div class="cellule">ECLAIRAGE CABINE</div>
+      <div class="cellule">AELAM S03B</div>
+      <div class="cellule">78344443</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
-    
-     
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">ECLAIRAGE COURSIVE  36W</div>
+      <div class="cellule"> AELAM S03D</div>
+      <div class="cellule">08346963</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">ECLAIRAGE CABINE 13W</div>
+      <div class="cellule">AELAM R06A</div>
+      <div class="cellule">88340152</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">ECLAIRAGE COURSIVE  85V 25W</div>
+      <div class="cellule">AELAM T01D</div>
+      <div class="cellule">08341815</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">ECLAIRAGE PUPITRE  85V 4W</div>
+      <div class="cellule">AELAM T01C</div>
+      <div class="cellule">78344226</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">ECLAIRAGE CABINE  (BX)  13W</div>
+      <div class="cellule">AELAM S03B</div>
+      <div class="cellule">78344443</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">CVS ECLAIRAGE VOYAGEURS  85V 25W</div>
+      <div class="cellule">AELAM T01D</div>
+      <div class="cellule">08341815</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">NEONS VOYAGEURS   28W/21W/14W</div>
+      <div class="cellule">AELAM S03C/R05C</div>
+      <div class="cellule">08340003/08340006/88340155</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">LAMPES BL</div>
+      <div class="cellule"></div>
+      <div class="cellule">7834422</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">BG TELOC</div>
+      <div class="cellule">MAG01 L02C</div>
+      <div class="cellule">70294036</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">FUSIBLES 60A</div>
+      <div class="cellule">AELAM S06B</div>
+      <div class="cellule">78324745</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
      <div class="ligne">
       <div class="cellule">CLEF BL</div>
       <div class="cellule">AIS3 C01A</div>
@@ -286,8 +342,33 @@
 
 
     </div>
-     
-     
+     <div class="ligne">
+      <div class="cellule">FANAL ROUGE</div>
+      <div class="cellule">AIS3 T01A</div>
+      <div class="cellule">78344184</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">FANAL BLANC    27300/VB2N/7600</div>
+      <div class="cellule">AIS3 T01D</div>
+      <div class="cellule">78344000/78344057/78344057</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">CLEF PANTO</div>
+      <div class="cellule">BDL AIS3 D01E</div>
+      <div class="cellule">78918496</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
      <div class="ligne">
       <div class="cellule">LANTERNES DE BORD</div>
       <div class="cellule"></div>
@@ -306,7 +387,15 @@
 
 
     </div>
-     
+     <div class="ligne">
+      <div class="cellule">CLEF INVERSEUR</div>
+      <div class="cellule">AIS3 C01A</div>
+      <div class="cellule">78918648</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
      <div class="ligne">
       <div class="cellule">ETIQUETTES ACCES INTERDIT</div>
       <div class="cellule">AAIS3 B01C</div>
@@ -361,7 +450,25 @@
 
 
     </div>
-     
+     <div class="ligne">
+      <div class="cellule">LAMPE 24V  40W</div>
+      <div class="cellule">AELAM T01D</div>
+      <div class="cellule">08341845</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+
+    <div class="ligne">
+      <div class="cellule">LAMPE 85V  25W</div>
+      <div class="cellule">AELAM T01D</div>
+      <div class="cellule">08341815</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
     <div class="ligne">
       <div class="cellule">LAMPE FANAL 85V 18/50W</div>
       <div class="cellule">AELAM T01D</div>
@@ -371,9 +478,51 @@
 
 
     </div>
-    
-    
-    
+    <div class="ligne">
+      <div class="cellule">LAMPE 85V  10W</div>
+      <div class="cellule">AELAM T01D</div>
+      <div class="cellule">08341610</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">85V  4W (TOUS ENGINS)</div>
+      <div class="cellule">AELAM T01B</div>
+      <div class="cellule">78344237</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">LS FEU ROUGE 85V  40W</div>
+      <div class="cellule">AELAM T01A</div>
+      <div class="cellule">78344184</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">24/30  2W</div>
+      <div class="cellule">AELAM T01B</div>
+      <div class="cellule">78344237</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">85V  4W</div>
+      <div class="cellule">AELAM T01C</div>
+      <div class="cellule">78344226</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
     <div class="ligne">
       <div class="cellule">DEGRIPPANT LUBRIFIANT-PDG</div>
       <div class="cellule">MAG3 B02D</div>
@@ -437,9 +586,51 @@
 
 
     </div>
-   
-    
-    
+    <div class="ligne">
+      <div class="cellule">FEU ROUGE 72 V A LEDS (VB2N)</div>
+      <div class="cellule">MAG02 06 29</div>
+      <div class="cellule">08237586</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">FANAL (VB2N)</div>
+      <div class="cellule">MAG02 19 12</div>
+      <div class="cellule">08334014</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">AMPOULE DE PHARE</div>
+      <div class="cellule">AELAM T01D</div>
+      <div class="cellule">78344057</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">FUSIBLE RECA HVAC (60A)R 5</div>
+      <div class="cellule">AELAM S06B</div>
+      <div class="cellule">78324745</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">CAPA EXR 5</div>
+      <div class="cellule">AELAM S05D</div>
+      <div class="cellule">78174792</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
     <div class="ligne">
       <div class="cellule">  DOSSIER ROUGE ET BLEU </div>
       <div class="cellule">AIS1 B05F AIS1 B05C</div>
@@ -452,9 +643,9 @@
  
   </div>
    <div class="ligne">
-      <div class="cellule"> -----------------------------------------------------> AUTRES <---------------------------------------------------</div>
-      <div class="cellule">à compléter</div>
-      <div class="cellule">à compléter</div>
+      <div class="cellule"> -----------------------------------------------> AUTRES <----------------------------------------------</div>
+      <div class="cellule">AIS1 B05F AIS1 B05C</div>
+      <div class="cellule">02441056 / 07375586</div>
       <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
       <div class="cellule"><input id="checkBox" type="checkbox"></div>
 
@@ -473,7 +664,7 @@
     <div class="col"></div>
     <div class="col"></div>
   </div>
-  <div class="legende"> Consommables sur le site de Chartres  </div>
+  <div class="legende"> Consommables sur le site de Montrouge   </div>
   <header class="tete">
     <div class="cellule">Nom Produit </div>
     <div class="cellule">Emplacement</div>
@@ -608,6 +799,19 @@
 
     </div>
 
+    <div class="ligne">
+      <div class="cellule"> Commentaire sur la commande : <FORM>
+      <TEXTAREA name="nom" rows=3 cols=100></TEXTAREA>
+      </FORM>
+
+      </div>
+     
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+
+
+    </div>
+
    
   </div>
 
@@ -626,14 +830,15 @@
 
 
 
+
+
 <div class="spacer"></div>
 <div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
+
+
+
+
+
 
 
             

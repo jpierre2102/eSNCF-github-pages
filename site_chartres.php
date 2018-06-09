@@ -24,85 +24,14 @@
 
 
 
-   <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-     
-      
-      <a class="navbar-brand" href="index.html"><img src="Images/logo2.png" class="logo" width="90"></a>
-    </div>
+   <?php
+include('php/vues/navbar.php');?>
 
-
-
-
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      
-<ul class="nav navbar-nav ">
-
-<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sites Extérieurs
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="site_dreux.html">Site de Dreux</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_chartres.html">Site de Chartres</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_rambouillet.html">Site de Rambouillet</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_vouille.html">Site de Vouille</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montparnasse.html">Site de Montparnasse</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montrouge.html">Site de Montrouge</a>
-          <div class="spacer4"></div>
-        </div>
-      </li>
-
-</ul>
-
-
-      <ul class="nav navbar-nav navbar-right">
-        
-       <li><a href="connexion.html">Connexion</a></li>
-       <li><a href="contact.html">Contact</a></li>   
-          
-           
-            
-
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
 
     <div class="spacer"></div>
    <div class="container text-center">
-<h1>Site de Montparnasse </h1>
+<h1>Site de Chartres </h1>
 <div class="spacer"></div>
 
 <section class="tableau">
@@ -110,7 +39,7 @@
     <div class="col"></div>
     <div class="col"></div>
   </div>
-  <div class="legende">Produit stockés sur le site de Montparnasse</div>
+  <div class="legende">Produit stockés sur le site de Chartres</div>
 
 
   <header class="tete">
@@ -150,9 +79,33 @@
 
     </div>
 
-   
-    
-   
+    <div class="ligne">
+      <div class="cellule">NETTOYANT VERNIS COLLE 20L</div>
+      <div class="cellule"><img src="Images/photo_produit/nettoyant_vernis.JPG"></div>
+      <div class="cellule">DIESTONE DLS</div>
+      <div class="cellule">72100215</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">NETTOYAGE MOQUETTE - 20L</div>
+      <div class="cellule"><img src="Images/photo_produit/nettoyage_moquette.JPG"></div>
+      <div class="cellule">NETAL MO-2</div>
+      <div class="cellule">72104544</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">NETTOYAGE Demoustiquant pare-brise -20L</div>
+      <div class="cellule"><img src="Images/photo_produit/nettoyage_demoustiquant.JPG"></div>
+      <div class="cellule">NETAL ET-33-E</div>
+      <div class="cellule">02100202</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
     <div class="ligne">
       <div class="cellule">MULTIUSAGE 20L </div>
       <div class="cellule"><img src="Images/photo_produit/multiusage.JPG"></div>
@@ -162,7 +115,15 @@
       <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
     </div>
-   
+    <div class="ligne">
+      <div class="cellule">NETT INOX & FILTRES 20L</div>
+      <div class="cellule"><img src="Images/photo_produit/diluant_gomme.JPG"></div>
+      <div class="cellule">BONDERITE C-MC 9206 (anciennement : PE 9206)</div>
+      <div class="cellule">02108065</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+    </div>
      <div class="ligne">
       <div class="cellule">DILUANT Pour GOMME A MACHER   CARTON DE 4 X 5 LITRES</div>
       <div class="cellule"><img src="Images/photo_produit/anti_gun.JPG"></div>
@@ -209,22 +170,230 @@
       <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
     </div>
-
     <div class="ligne">
-      <div class="cellule">------------------------------------------> Autres <---------------------------------------------</div>
-      <div class="cellule"> Photo à mettre</div>
-      <div class="cellule">à compléter</div>
-      <div class="cellule">à compléter</div>
+      <div class="cellule">Produit antigivre panto TGV (bidon 25L)</div>
+      <div class="cellule"><img src="Images/photo_produit/antigivre.JPG"></div>
+      <div class="cellule">KILFROST RAIL PLUS</div>
+      <div class="cellule">02103113</div>
       <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
       <div class="cellule"> <input id="checkBox" type="checkbox"></div>
 
-    </div>
     
+   </div>
 
 </section>
 
 
+     <section class="tableau">
+  <div class="colgroupe">
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+  <div class="legende">Listes Pièces sur le site de Chartres  </div>
+  <header class="tete">
+    <div class="cellule">Nom Produit </div>
+    <div class="cellule">Emplacement</div>
+    <div class="cellule">N° de Symbole</div>
+    <div class="cellule">Quantité</div>
+    <div class="cellule">Sélectionner</div>
+  </header>
+  
+  <div class="corp">
     
+    
+     
+
+    
+     
+     <div class="ligne">
+      <div class="cellule">CLEF BL</div>
+      <div class="cellule">AIS3 C01A</div>
+      <div class="cellule">78746337</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     
+     
+     <div class="ligne">
+      <div class="cellule">LANTERNES DE BORD</div>
+      <div class="cellule"></div>
+      <div class="cellule">37798204</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">BATTERIES LANTERNE DE BORD</div>
+      <div class="cellule">AIS3 B02C</div>
+      <div class="cellule">08168652</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     
+     <div class="ligne">
+      <div class="cellule">ETIQUETTES ACCES INTERDIT</div>
+      <div class="cellule">AAIS3 B01C</div>
+      <div class="cellule">001327170</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">FICHE SUIVEUSE BLEUE TER</div>
+      <div class="cellule">MAG01 L04D</div>
+      <div class="cellule">00133197</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">SCELLE PLASTIQUE L:160 JAUNE</div>
+      <div class="cellule">IN04 A01H</div>
+      <div class="cellule">88340152</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">SCELLE PLASTIQUE L:240 JAUNE</div>
+      <div class="cellule">IN04 A01H</div>
+      <div class="cellule">03648452</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">LANTERNE OUTILLAGE DE BORD</div>
+      <div class="cellule">AIS3 B02D</div>
+      <div class="cellule">03779820</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     <div class="ligne">
+      <div class="cellule">PILE LANTERNE PORTATIVE 6LR20</div>
+      <div class="cellule">AIS3 B02C</div>
+      <div class="cellule">08168652</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+     
+    <div class="ligne">
+      <div class="cellule">LAMPE FANAL 85V 18/50W</div>
+      <div class="cellule">AELAM T01D</div>
+      <div class="cellule">78344057</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    
+    
+    
+    <div class="ligne">
+      <div class="cellule">DEGRIPPANT LUBRIFIANT-PDG</div>
+      <div class="cellule">MAG3 B02D</div>
+      <div class="cellule">02733340</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">ASSISES TER2N (ROUGE ET BLEU)</div>
+      <div class="cellule">AIS1 B05C B05E</div>
+      <div class="cellule">07370493 / 02440813</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">VITRE MARTEAU BRISE VITRE TER2N</div>
+      <div class="cellule">AIS3 B03C</div>
+      <div class="cellule">03204274</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">TORCHE A FR</div>
+      <div class="cellule">MAG09 C01A</div>
+      <div class="cellule">02079090</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">NEON GRAND MODELE</div>
+      <div class="cellule">AELAM S03D</div>
+      <div class="cellule">08346963</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">NEONS PETIT MODELE</div>
+      <div class="cellule">TRAN5</div>
+      <div class="cellule">88340155</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+    <div class="ligne">
+      <div class="cellule">NEONS PETIT MODELE</div>
+      <div class="cellule">TRAN5</div>
+      <div class="cellule">88340156</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    </div>
+   
+    
+    
+    <div class="ligne">
+      <div class="cellule">  DOSSIER ROUGE ET BLEU </div>
+      <div class="cellule">AIS1 B05F AIS1 B05C</div>
+      <div class="cellule">02441056 / 07375586</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    
+ 
+  </div>
+   <div class="ligne">
+      <div class="cellule"> -----------------------------------------------------> AUTRES <---------------------------------------------------</div>
+      <div class="cellule">à compléter</div>
+      <div class="cellule">à compléter</div>
+      <div class="cellule"><input id="ticketNum" type="number" name="ticketNum" value=""></div>
+      <div class="cellule"><input id="checkBox" type="checkbox"></div>
+
+
+    
+ 
+  </div>
+
+
+</section>
+
 
 
 <section class="tableau">
@@ -232,7 +401,7 @@
     <div class="col"></div>
     <div class="col"></div>
   </div>
-  <div class="legende"> Consommables sur le site de Montparnasse  </div>
+  <div class="legende"> Consommables sur le site de Chartres  </div>
   <header class="tete">
     <div class="cellule">Nom Produit </div>
     <div class="cellule">Emplacement</div>
@@ -366,6 +535,18 @@
 
 
     </div>
+    <div class="ligne">
+      <div class="cellule"> Commentaire sur la commande : <FORM>
+      <TEXTAREA name="nom" rows=3 cols=100></TEXTAREA>
+      </FORM>
+
+      </div>
+     
+      <div class="cellule"> <input id="checkBox" type="checkbox"></div>
+
+
+
+    </div>
 
    
   </div>
@@ -385,15 +566,9 @@
 
 
 
+<div class="spacer"></div>
+<div class="spacer"></div>
 
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
 
 
             

@@ -79,7 +79,7 @@ body {
 }
 
 .navbar-transparent .navbar-brand,
-.navbar-transparent .navbar-nav > li > a {
+.navbar-transparent .navbar-nav > li > a, {
   color: #eeeeee;
   line-height: 20px;
 }
@@ -93,7 +93,11 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
+.nav-boutton
+{
+  background: transparent;
+  border: transparent;
+}
 .navbar-transparent .navbar-brand:hover,
 .navbar-transparent .navbar-brand:active,
 .navbar-transparent .navbar-brand:focus {

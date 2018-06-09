@@ -23,81 +23,8 @@
   <body>
 
 
-
-   <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-     
-      
-      <a class="navbar-brand" href="index.html"><img src="Images/logo2.png" class="logo" width="90"></a>
-    </div>
-
-
-
-
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      
-<ul class="nav navbar-nav ">
-
-<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sites Extérieurs
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="site_dreux.html">Site de Dreux</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_chartres.html">Site de Chartres</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_rambouillet.html">Site de Rambouillet</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_vouille.html">Site de Vouille</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montparnasse.html">Site de Montparnasse</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montrouge.html">Site de Montrouge</a>
-          <div class="spacer4"></div>
-        </div>
-      </li>
-
-</ul>
-
-
-      <ul class="nav navbar-nav navbar-right">
-        
-       <li><a href="connexion.html">Connexion</a></li>
-       <li><a href="contact.html">Contact</a></li>   
-          
-           
-            
-
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<?php
+include('php/vues/navbar.php');?>
 
 
 
@@ -127,6 +54,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
     
   </ol>
 
@@ -215,6 +143,24 @@
     </div>
   </div>
 
+  <div class="item">
+      <img src="images/fond10.jpg" alt="cinquieme photo">
+      <div class="carousel-caption">
+        <h1>CSE.SNCF</h1>
+      
+      
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#orderForm">
+          Inscrivez-vous
+        </button>
+      
+      <div class="spacer1"></div>
+      <div class="spacer1"></div>
+
+
+
+    </div>
+  </div>
+
 </div>
 
 
@@ -272,26 +218,73 @@
       </div>
       <div class="modal-body">
         
-          <div id="wufoo-w19scj6z115im70">
-        Fill out my <a href="https://jpierre2102.wufoo.com/forms/w19scj6z115im70">online form</a>.
+          <form id="form6" name="form6" class="align" accept-charset="UTF-8" autocomplete="off"  method="post" novalidate="" action="php/addUser.php">
+  
+<header id="header" class="info">
+  <h2 class="centerFormProp">Formulaire d'inscription</h2>
+  <div class="centerFormProp">veuillez remplir les informations suivantes :</div>
+</header>
+
+  
+<ul>
+    
+  
+  
+<li id="fo6li36" class="notranslate">
+  <label class="desc" id="title36" for="Field36">
+    Adresse électronique
+      </label>
+  <div>
+    <input id="Field36" name="email" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="handleInput(this);" onchange="handleInput(this);" placeholder="">
+  </div>
+  </li>
+
+
+
+<li id="fo6li33" class="notranslate">
+  <label class="desc" id="title33" for="Field33">
+    Mot de passe
+      </label>
+  <div>
+    <input id="Field33" name="regMdp" type="password" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup="handleInput(this); " onchange="handleInput(this);" placeholder="">
+      </div>
+  </li>
+
+
+
+<li id="fo6li34" class="notranslate       focused">
+  <label class="desc" id="title34" for="Field34">
+    identifiant
+      </label>
+  <div>
+    <input id="Field34" name="regUserName" type="text" class="field text medium" value="" maxlength="255" tabindex="3" onkeyup="handleInput(this); " onchange="handleInput(this);" placeholder="">
+      </div>
+  </li>
+
+
+ 
+
+  
+  <li class="buttons ">
+    <div>
+                <input type="hidden" name="currentPage" id="currentPage" value="Ub9wuBe198rA2jOo0W8ktjudQpD0N6rkDk0UM6gYwuBefGLqM=">
+      
+                                                  <input id="saveForm" name="btnRegister" class="btTxt submit" type="submit" value="Soumettre" onmousedown="doSubmitEvents();">
+          
+    
+    
         </div>
-        <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"><a href="http://www.wufoo.com/form-builder/"></a> </div>
-        <script type="text/javascript">var w19scj6z115im70;(function(d, t) {
-        var s = d.createElement(t), options = {
-        'userName':'jpierre2102',
-        'formHash':'w19scj6z115im70',
-        'autoResize':true,
-        'height':'642',
-        'async':true,
-        'host':'wufoo.com',
-        'header':'show',
-        'ssl':true};
-        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-        s.onload = s.onreadystatechange = function() {
-        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-        try { w19scj6z115im70 = new WufooForm();w19scj6z115im70.initialize(options);w19scj6z115im70.display(); } catch (e) {}};
-        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-        })(document, 'script');</script>
+  </li>
+
+    <li class="hide">
+    <label for="comment">Do Not Fill This Out</label>
+    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+    <input type="hidden" id="idstamp" name="idstamp" value="PaOLq80nrKbvge/6UMxCUcmVKw+QR4dSrtMhgIKRQmI=">
+        <input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:&quot;http:\/\/localhost:8888\/eSNCF-github-pages\/&quot;}">
+        <input type="hidden" id="clickOrEnter" name="clickOrEnter" value="">
+      </li>
+  </ul>
+</form>
 
       </div>
       <div class="modal-footer">

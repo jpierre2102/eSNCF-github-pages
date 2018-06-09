@@ -23,60 +23,8 @@
     <![endif]-->
   </head>
   <body>
-   <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">
-        <img src="Images/logo2.png" class="logo" width="90"></a>
-    </div>
-
-    <ul class="nav navbar-nav ">
-
-<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sites Extérieurs
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="site_dreux.html">Site de Dreux</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_chartres.html">Site de Chartres</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_rambouillet.html">Site de Rambouillet</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_vouille.html">Site de Vouille</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montparnasse.html">Site de Montparnasse</a>
-          <div class="spacer4"></div>
-          <a class="dropdown-item" href="site_montrouge.html">Site de Montrouge</a>
-          <div class="spacer4"></div>
-        </div>
-      </li>
-
-</ul>
-
-
-      <ul class="nav navbar-nav navbar-right">
-      
-      <li><a href="connexion.html">Connexion</a></li>
-       <li><a href="contact.html">Contact</a></li>
-          
-          
-           
-            
-
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+   <?php
+include('php/vues/navbar.php');?>
 
 
 
@@ -181,9 +129,10 @@
               </div>
             <div class="spacer"></div>
             <div class="spacer"></div>
-            <div class="spacer2"></div>
-            <div class="spacer2"></div>
-    <div class="spacer2"></div>
+            <div class="spacer"></div>
+           
+         
+   
 
 
 
